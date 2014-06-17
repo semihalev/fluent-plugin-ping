@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |gem|
   gem.name = "fluent-plugin-ping"
-  gem.description = "This input plugin get ping"
+  gem.description = "This input plugin get ping via http"
   gem.homepage = "https://github.com/semihalev/fluent-plugin-ping"
   gem.summary = gem.description
   gem.version = "0.0.1"
