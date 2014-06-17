@@ -1,5 +1,5 @@
 module Fluent
-  class Ping < Input
+  class Ping < Fluent::Input
     Plugin.register_input('ping', self)
     include DetachMultiProcessMixin
 
@@ -76,7 +76,7 @@ module Fluent
     def on_request(path_info, params)
       begin
         if path == "/ping"
-          return ["200 OK", {'Content-type'=>'text/plain'}, "{\"status\":\"ok\"}\n"]
+          return ["200 OK", {'Content-type'=>'text/plain'}, '{"status":"ok"}\n']
         end
       rescue
         return ["404 Not Found", {'Content-type'=>'text/plain'}, "404 Not Found\n"]
