@@ -1,0 +1,22 @@
+= Ping input plugin for Fluent event collector
+
+== Overview
+
+*This input plugin allows you get ping from fluentd via http
+
+== Installation
+
+    gem install fluent-plugin-ping
+
+== Configuration
+
+    <source>
+      type ping
+      bind <bind_ip>
+      port <binding_udp_port>
+    </source>
+
+== Copyright
+
+Copyright:: Copyright (c) 2014 Yasar Semih Alev
+
